@@ -2,20 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes snake-border {
+  0% {
+    border-color: transparent;
+  }
+  12.5% {
+    border-top-color: #09e85e;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-top-color: #09e85e;
+    border-right-color: #09e85e;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  37.5% {
+    border-top-color: transparent;
+    border-right-color: #09e85e;
+    border-bottom-color: #09e85e;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #09e85e;
+    border-left-color: #09e85e;
+  }
+  62.5% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #09e85e;
+  }
+  75% {
+    border-top-color: #09e85e;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  87.5% {
+    border-top-color: #09e85e;
+    border-right-color: #09e85e;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.snake-border {
+  position: relative;
+  padding: 15px;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: transparent;
+  animation: snake-border 4s linear infinite;
+  box-sizing: border-box;
 }
