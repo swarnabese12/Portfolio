@@ -13,6 +13,7 @@ export async function GET(req: Request) {
       "Next.js",
       "Node.js",
       "Mongo DB",
+      "Tailwind CSS"
     ],
     summary:
       "I am a Full-Stack Web and Blockchain Developer who loves building efficient, scalable, and user-friendly applications. Over time, I’ve gained experience in both front-end and back-end development, allowing me to create smooth user experiences and strong system designs. I work with frameworks like React.js, Vue.js, and Next.js to create responsive and dynamic websites. On the back-end, I use Node.js and MongoDB to build secure and reliable systems. I have developed projects on the Solana blockchain and written smart contracts using Anchor, showcasing my expertise in decentralized technologies. I focus on writing clean, easy-to-maintain code and staying updated with the latest tools and trends in web and blockchain development.",

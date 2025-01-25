@@ -3,6 +3,7 @@ import { SiSolana } from "react-icons/si";
 import { FiAnchor } from "react-icons/fi";
 import { SiNextdotjs } from "react-icons/si";
 import { FaRust } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 const skills = [
   { name: "Vue.js", icon: <FaVuejs size={30} className="text-customGreen" /> },
@@ -13,6 +14,7 @@ const skills = [
   { name: "Solana", icon: <SiSolana size={30} className="text-customGreen" /> },
   { name: "Anchor", icon: <FiAnchor size={30} className="text-customGreen" /> },
   { name: "Rust", icon: <FaRust size={30} className="text-customGreen" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss size={30} className="text-customGreen" /> },
 ];
 
 export default function Skills() {
